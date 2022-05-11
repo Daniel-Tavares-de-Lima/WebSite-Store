@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    background-image: url(./imagens/BACKGROUND\ NOITE\ ESTRELADA\ 5\ GIF.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-tittle{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo-tittle h1{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 21px;
+}
+
+.logo-tittle img{
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border-radius: 100px;
+    margin-top: 5px;
+}
+
+.menu{
+    display: none;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none;
+    padding: 5px;
+    cursor: default;
+}
+
+li{
+    color: white;
+    padding: 14px;
+    font-weight: 500;
+}
+
+
+
+.main{
+    height: 787px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-left{
+    max-width: 45%;
+    display: flex;
+    margin-left: 100px;
+    transition: 1.5s;  
+}
+
+.sub-left h1{
+    color: white;
+    font-size: 112px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+.main-right{
+    max-width: 800px;
+    height: 450px;
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.sub-right{
+    width: 200%;
+    height: 400px;
+    display: flex;
+}
+
+.sub-right input{
+    display: none;
+}
+
+
+/*-------------------HOVER-----------------------*/
+
+li:hover{
+    background-color: rgb(226, 61, 255,0.7);
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.logo-tittle:hover{
+    cursor: pointer;
+}
+
+.container2 img:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.slide a img:hover{
+    cursor: pointer;
+
+}
+
+/*SLIDEEEEEEE---------------------------------------*/
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 400px;
+}
+
+.manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    bottom: 330px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin: 0;
+}
+
+#radio2:checked ~ .first{
+    margin: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin: -75%;
+}
+
+.navegation div{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.navegation{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navegation div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navegation .nav-btn1{
+    background-color: #fff;
+}
+
+#radio2:checked ~ .navegation .nav-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~ .navegation .nav-btn3{
+    background-color: #fff;
+}
+#radio4:checked ~ .navegation .nav-btn4{
+    background-color: #fff;
+}
+
+/*----------------CONTAINER2-------------------------*/
+
+.container2{
+    height: 600px;
+    background-image: url(./imagens/fundo3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+.container2 h1{
+    color: white;
+    font-size: 50px;
+}
+
+
+.tittles{
+    text-align: start;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    font-size: 30px;
+    margin: 15px;
+    
+}
+
+.tittles h1{
+    font-size: 30px;
+}
+
+.tittles p{
+    font-size: 13px;
+}
+
+.tittles p:nth-child(2){
+    margin-bottom: 130px;
+    font-size: 13px;
+}
+
+.tittle2{
+    text-align: start;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    line-height: 1; 
+    margin: 10px;
+}
+
+.tittle2 h1{
+    font-size: 30px;
+}
+
+.tittle2 p{
+    font-size: 13px;
+}
+
+.tittle2 h1:nth-child(1){
+    margin-top: 130px;
+
+}
+
+
+.container2 img{
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 400px;
+    height: 400px;
+    margin: 0 15px;
+}
+
+
+/*-----------------EFECTTT-------------------------*/
+
+
+.efect{
+    background-color: #06181f;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.efect .icon{
+    width: 200px;
+}
+
+.efect .icon path{
+    fill: transparent;
+    stroke-width: 10;
+    stroke: #31e8ff;
+}
+/*------HEART------*/
+.efect .icon.heart path{
+    stroke-dasharray: 3830;
+    stroke-dashoffset: 0;
+}
+
+.efect .icon.heart:hover path{
+    animation: animate-heart 2s linear forwards
+}
+@keyframes animate-heart{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 3830;
+    }
+    80%{
+        stroke-dashoffset: 7660;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 7660;
+        fill: #31e8ff;
+    }
+    
+}
+
+/*---STAR--*/
+
+.efect .icon.star path{
+    stroke-dasharray: 3860;
+    stroke-dashoffset: 0;
+}
+
+.efect .icon.star:hover path{
+    animation: animate-star 2s linear forwards
+}
+@keyframes animate-star{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 3860;
+    }
+    80%{
+        stroke-dashoffset: 7720;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 7720;
+        fill: #31e8ff;
+    }
+    
+}
+
+
+/*-------MOON-------------*/
+
+.efect .icon.moon path{
+    stroke-dasharray: 4330;
+    stroke-dashoffset: 0;
+}
+
+.efect .icon.moon:hover path{
+    animation: animate-moon 2s linear forwards
+}
+@keyframes animate-moon{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 4330;
+    }
+    80%{
+        stroke-dashoffset: 8660;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 8660;
+        fill: #31e8ff;
+    }
+    
+}
+/*---------------FOOTERR-----------------------*/
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 400px;
+    color: white;
+    position: relative;
+}
+
+
+.logo-tittle2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.logo-tittle2 h1{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 17px;
+}
+
+.logo-tittle2 img{
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 15%;
+
+}
+
+.footer h6{
+    font-size: 17px;
+}
+
+.footer p{
+    font-size: 12px;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+.footer2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 110px;
+    right: 15%;
+}
+
+.footer2 h6{
+    font-size: 17px;
+}
+
+.footer2 p{
+    font-size: 12px;
+    margin-bottom: 35px;
+    font-family: sans-serif;
+}
+
+.registro{
+    display: flex;
+    justify-content: center;
+    font-size: 9px;
+}
+
