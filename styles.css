@@ -481,3 +481,265 @@ footer{
     font-size: 9px;
 }
 
+/*-----------RESPONSIVE-----------------*/
+
+@media (max-width: 1445px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .main-left{
+        margin: auto;
+    }
+
+    .main .main-left .sub-left{
+        height: 200px;
+        width: 460px;
+        
+    }
+
+    .main .main-left .sub-left h1{
+        font-size: 3rem;
+        text-align: center;
+
+    }
+
+    .main-right .manual{
+        display: none;
+    }
+    
+    .container2 a img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .container2 .tittles h1{
+        font-size: 1.5rem;
+    }
+
+    .container2 .tittles p{
+        font-size: 12px;
+        color: black;
+        font-weight: 500;
+    }
+
+    .container2 .tittle2 h1{
+        font-size: 1.5rem;
+    }
+
+    .container2 .tittle2 p{
+        font-size: 13px;
+        color: black;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 1110px){
+    
+    .container2{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .container2 .tittles{
+        height: 80px;
+        margin: 0;
+    }
+
+    .container2 a.img2{
+        margin-bottom: 130px;
+    }
+
+    .container2 .tittle2{
+        height: 80px;
+        width: 400px;
+        margin: 0;
+        position: absolute;
+        top: 350px;
+    }
+
+    .container2 a img{
+        width: 150px;
+        height: 150px;
+    }
+    .container2 .tittles p{
+        font-size: 12px;
+        color: rgb(170, 0,242);
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .container2 .tittle2 h1{
+        text-align: center;
+    }
+
+    .container2 .tittle2 p{
+        font-size: 12px;
+        letter-spacing: 2px;
+        color: rgb(0, 150,13);
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+@media (max-width:1000px){
+
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul{
+        display: none;
+    }
+
+    nav img.menu{
+        display: block;
+        width: 40px;
+        margin-right: 40px;
+    }
+    .logo-tittle img{
+        width: 50px;
+        height: 50px;
+    }
+    .logo-tittle h1{
+        font-size: 16px;
+    }
+    .logo-tittle{
+        margin-left: 40px;
+    }
+
+    .container2 .tittles p{
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width:900px){
+    .main .main-right{
+        max-width: 600px;
+        margin: 0;
+    }
+
+    .main .main-right .sub-right .navegation{
+        width:610px;
+    }
+
+}
+
+@media (max-width:680px){
+    .main .main-right{
+        max-width: 500px;
+        margin: 0;
+    }
+
+    .main .main-right .sub-right .navegation{
+        width:510px;
+    }
+
+}
+
+@media (max-width:550px){
+    .main .main-right{
+        max-width: 400px;
+        margin: 0;
+    }
+
+    .main .main-right .sub-right .navegation{
+        width:410px;
+    }
+
+    .main .main-left .sub-left h1{
+        font-size: 2.3rem;
+    }
+
+    .efect .icon.heart{
+       margin-left: 8px;
+    }
+
+    .efect .icon.moon{
+        margin-right: 8px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    footer .footer{
+        display: none;
+    }
+
+    footer .footer2{
+        position: absolute;
+        top: 150px;
+        left: 200px;
+
+    }
+
+}
+
+@media (max-width:450px){
+    .main .main-right{
+        max-width: 300px;
+        margin: 0;
+    }
+
+    .main .main-right .sub-right .navegation{
+        width:310px;
+    }
+
+    footer .footer2{
+        position: absolute;
+        top: 150px;
+        left: 163px;
+
+    }
+
+    .container2 .tittles h1{
+        text-align: center;
+    }
+
+    header .logo-tittle{
+        margin-right: 10px;
+        text-align: flex-start;
+    }
+
+    header .logo-tittle h1{
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width:380px){
+    .main .main-left .sub-left h1{
+        font-size: 2rem;
+        
+    }
+
+    .container2 .tittles{
+        width: 350px;
+        text-align: center;
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+
+    .container2 .tittle2{
+        width: 350px;
+    }
+
+    .container2 .tittle2 p{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    footer .footer2{
+        position: absolute;
+        top: 150px;
+        left: 126px;
+
+    }
+
+}
+
